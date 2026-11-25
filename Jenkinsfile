@@ -14,14 +14,14 @@ pipeline {
         stage('Compile Java') {
             steps {
                 echo 'Compiling Java program'
-                sh 'javac MatrixMultiplication.java'
+                sh 'javac hello.java'
             }
         }
 
         stage('Run Java Program') {
             steps {
                 echo 'Executing Java program'
-                sh 'java hello.java'
+                sh 'java hello'
             }
         }
     }
