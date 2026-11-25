@@ -13,7 +13,7 @@ pipeline {
         stage('Run Python Program') {
             steps {
                 echo 'Executing Python program'
-                sh 'python hello.py'
+                sh 'python3 hello.py'
             }
         }
     }
